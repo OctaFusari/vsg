@@ -1,7 +1,7 @@
 body{
     background-image: url("img/sfondo.png.jpg");
     background-position: 0 0;
-    background-size: cover;
+    background-size: 100%
 }
 
 .menu{
@@ -14,7 +14,7 @@ body{
     bottom: 10px;
     left: 10px;
     right: 10px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Montserrat,-apple-system,BlinkMacSystemFont,Segoe UI,Fira Sans,Helvetica Neue,Arial,sans-serif;
 }
 .nomeaz{
     font-family: 'Lobster', cursive;
@@ -80,20 +80,21 @@ ul li ul li a{
     float: left;
 }
 .titoli1{
-    font-family: 'Noto Sans', sans-serif;
+    font-family: Montserrat,-apple-system,BlinkMacSystemFont,Segoe UI,Fira Sans,Helvetica Neue,Arial,sans-serif;
     font-size: 1.5cm;
     color: rgb(235, 180, 0);
     padding-left: 2cm;
 
 }
 .titoli2{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Montserrat,-apple-system,BlinkMacSystemFont,Segoe UI,Fira Sans,Helvetica Neue,Arial,sans-serif;
     margin-bottom: 1cm;
-    margin-top: 1cm;
-    padding-top: 3cm;
+    margin-top: 0.5cm;
+    padding-top: 2cm;
     color: rgb(255, 255, 255);
     padding-left: 2cm;
     font-size: 0.5cm;
+    text-align: left;
 }
 .page{
     background: rgb(255, 255, 255, 0.404);
@@ -107,9 +108,23 @@ ul li ul li a{
     
 }
 .image1{
-    width: 10cm;
-    height: 6cm;
-    margin-top: 1cm;
+    width: 20cm;
+    height: 12cm;
+    margin-top: 0cm;
     float: left;
     margin-right: 2cm;
+}
+.divimagini{
+    width: 2000px;
+    margin: 100px auto 20px auto;
+    padding-right: 150px ;
+    padding-left: 150px ;
+}
+.image2{
+    width: 20cm;
+    height: 12cm;
+    margin-top: 0cm;
+    float: left;
+    margin-right: 2cm;
+    margin-top: 1cm;
 }
