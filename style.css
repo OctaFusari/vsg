@@ -1,8 +1,36 @@
-body{
-    background-image: url("img/sfondo.jpg");
-    background-position: 0 0;
-    background-size: 100%
+html,body{
+    margin:0;
+    padding:0;
 }
+
+.ParallaxContainer {
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 101%;
+    transform: translateZ(-1px) scale(2);
+    background: url("img/sfondo.jpg");
+    margin:0;
+    padding:0;
+  }
+
+.MainContainer {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 25cm;
+  box-sizing: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: rgb(217, 233, 222);
+  margin:0;
+  padding:0;
+}
+.ContentContainer {
+    position: relative;
+    display: block;
+    background-color: white;
+    z-index: 1;
+  }
 
 .menu{
     background: rgb(255, 255, 255, 0.404);
@@ -10,10 +38,10 @@ body{
     display: block;
     width: 100%;
     height: 1.5cm;
-    top: 10px;
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
     font-family: Montserrat,-apple-system,BlinkMacSystemFont,Segoe UI,Fira Sans,Helvetica Neue,Arial,sans-serif;
 }
 .nomeaz{
@@ -28,8 +56,11 @@ body{
 .c_menu{
     text-align: left;
     color: rgb(255, 255, 255);
-    background-color: rgb(255, 255, 255, 0.404);
     padding-top: 0.2cm;
+}
+
+.c_menu:hover{
+    background-color: rgb(255, 255, 255, 0.404);
 }
 
 
@@ -76,7 +107,7 @@ ul li ul li a{
     margin-right: 2cm;
 
 }
-.meuop{
+.menuop{
     float: left;
 }
 .titoli1{
@@ -99,12 +130,11 @@ ul li ul li a{
 .page{
     background: rgb(255, 255, 255, 0.404);
     display: block;
+    position: fixed;
     width: 100%;
-    height: 10cm;
-    top: 10px;
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
+    height: 9cm;
+    margin-top: 5.5cm;
+
     
 }
 .image1{
