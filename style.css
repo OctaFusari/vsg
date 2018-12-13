@@ -1,6 +1,7 @@
 html,body{
     margin:0;
     padding:0;
+    overflow: hidden;
 }
 
 .ParallaxContainer {
@@ -12,7 +13,8 @@ html,body{
     background: url("img/sfondo.jpg");
     margin:0;
     padding:0;
-  }
+    background-size: 100%;
+}
 
 .MainContainer {
   perspective: 1px;
@@ -28,17 +30,22 @@ html,body{
 .ContentContainer {
     position: relative;
     display: block;
-    background-color: white;
     z-index: 1;
+    height: 30cm;
+    background: url("img/sfondo.jpg");
+    background-size: 100%
+
   }
 
 .menu{
     background: rgb(255, 255, 255, 0.404);
+    top: 0;
+    z-index:9999;
     padding-top: 10px;
+    position: absolute;
     display: block;
     width: 100%;
     height: 1.5cm;
-    top: 0px;
     bottom: 0px;
     left: 0px;
     right: 0px;
@@ -51,7 +58,7 @@ html,body{
     margin-left: 0.5cm;
     margin-top: 5px;
     margin-right: 1cm;
-    border: 1px solid red;
+    border: 2px solid rgba(1, 63, 122, 0.466);
 }
 .c_menu{
     text-align: left;
@@ -60,12 +67,10 @@ html,body{
 }
 
 .c_menu:hover{
-    background-color: rgb(255, 255, 255, 0.404);
+    background-color: rgba(255, 255, 255, 0.274);
 }
-
-
 .amenu:hover{
-    text-shadow: 4px 4px 5px #ffffff7a; 
+    text-shadow: 4px 4px 5px #5252527a; 
     text-decoration-line: underline;
 }
 .amenu{
@@ -96,10 +101,7 @@ ul li:hover ul{
     padding-right: 0.5cm;
     padding-top: 0.2cm;
 }
-ul li ul li a{
-    padding-right: 20px;
-    padding-left: 0px;
-}
+
 .c_menu_index{
     float: left;
     margin-top: 2px;
@@ -113,7 +115,7 @@ ul li ul li a{
 .titoli1{
     font-family: Montserrat,-apple-system,BlinkMacSystemFont,Segoe UI,Fira Sans,Helvetica Neue,Arial,sans-serif;
     font-size: 1.5cm;
-    color: rgb(235, 180, 0);
+    color: rgb(0, 65, 59);
     padding-left: 2cm;
 
 }
@@ -122,7 +124,7 @@ ul li ul li a{
     margin-bottom: 1cm;
     margin-top: 0.5cm;
     padding-top: 2cm;
-    color: rgb(255, 255, 255);
+    color: #98670b;
     padding-left: 2cm;
     font-size: 0.5cm;
     text-align: left;
@@ -138,8 +140,8 @@ ul li ul li a{
     
 }
 .image1{
-    width: 20cm;
-    height: 12cm;
+    width: 16cm;
+    height: 9cm;
     margin-top: 0cm;
     float: left;
     margin-right: 2cm;
@@ -148,13 +150,28 @@ ul li ul li a{
     width: 2000px;
     margin: 100px auto 20px auto;
     padding-right: 150px ;
-    padding-left: 150px ;
+    padding-left: 40px ;
 }
 .image2{
-    width: 20cm;
-    height: 12cm;
+    width: 16cm;
+    height: 9cm;
     margin-top: 0cm;
     float: left;
     margin-right: 2cm;
     margin-top: 1cm;
 }
+
+@media only screen and (max-width:800px) {
+    .MainContainer {
+      width: 80%;
+      padding: 0;
+    }
+    .ParallaxContainer {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    .MainContainer {
+      width: 100%;
+    }
+  }
