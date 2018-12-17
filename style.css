@@ -2,43 +2,11 @@ html,body{
     margin:0;
     padding:0;
     overflow: hidden;
-}
-
-.ParallaxContainer {
-    display: flex;
-    position: relative;
-    height: 100%;
-    width: 101%;
-    transform: translateZ(-1px) scale(2);
     background: url("img/sfondo.jpg");
-    margin:0;
-    padding:0;
-    background-size: 100%;
 }
-
-.MainContainer {
-  perspective: 1px;
-  transform-style: preserve-3d;
-  height: 25cm;
-  box-sizing: 100%;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  background-color: rgb(217, 233, 222);
-  margin:0;
-  padding:0;
-}
-.ContentContainer {
-    position: relative;
-    display: block;
-    z-index: 1;
-    height: 30cm;
-    background: url("img/sfondo.jpg");
-    background-size: 100%
-
-  }
 
 .menu{
-    background: rgb(255, 255, 255, 0.404);
+    background: rgba(255, 255, 255, 0.363);
     top: 0;
     z-index:9999;
     padding-top: 10px;
@@ -130,14 +98,11 @@ ul li:hover ul{
     text-align: left;
 }
 .page{
-    background: rgb(255, 255, 255, 0.404);
+    background: rgba(255, 255, 255, 0.37);
     display: block;
-    position: fixed;
     width: 100%;
     height: 9cm;
     margin-top: 5.5cm;
-
-    
 }
 .image1{
     width: 16cm;
