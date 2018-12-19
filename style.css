@@ -40,10 +40,13 @@ body {
 .c_menu{
     text-align: left;
     color: rgb(255, 255, 255);
-    padding-top: 0.2cm;
+    padding-top: 0.3cm;
+
 }
 .amenu:hover{
-    text-decoration-line: underline;
+    color: rgba(0, 60, 88, 0.548);
+    -webkit-transition: color 250ms ease;
+    transition: color 250ms ease;
 }
 .amenu{
     color: #b37b13;
@@ -53,9 +56,11 @@ body {
     padding-left: 0px;
     font-size: 17px;
     display: block;
+    text-transform: uppercase;
+
 }
 .menutend{
-    background-color: rgba(255, 255, 255, 0.822);
+    background-color: rgba(255, 255, 255);
 }
 ul li ul{
     display:none;
@@ -70,11 +75,10 @@ ul{
 ul li:hover ul{
     display:block;
     position: absolute;
-    padding-left: 0cm;
-    padding-right: 0.4cm;
+    padding-left: 1%;
     padding-top: 0.4cm;
-    padding-bottom: 0.4cm;
-    width: 6.5%;
+    height: 250%;
+    width: 12%;
 
 }
 
@@ -99,48 +103,45 @@ ul li:hover ul{
     margin-top: 0.5cm;
     color: #af7914;
     padding-left: 2cm;
-    font-size: 0.5cm;
+    font-size: 0.55cm;
     text-align: left;
 }
 .titoloant{
-    margin-left: 0%;
-    padding-left: 0%;
     color: rgb(0, 65, 59);
     font-size: 0.8cm;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Lobster', cursive;
     margin-bottom: 1cm;
-    background-color: rgba(255, 255, 255, 0.815);
-}
-.ptesto{
-    background: rgba(255, 255, 255, 0.685);
-    display: block;
-    width: 80%;
-    margin-top: 1cm;
-    height: 6cm;
-    margin-left: 2cm;
+    background-color: rgba(255, 255, 255, 0.582);
+    width: 100%;
+    text-align: center;
     position: absolute;
 }
-.divimagini{
-    width: 100%;
+.ptesto{
+    background: rgba(242, 254, 255, 0.829);
+    width: 60%;
+    margin-top: 2.5cm;
+    height: 6cm;
+    margin-left: 1cm;
+    position: absolute;
 }
 
 .image1{
     width: 16cm;
     height: 9cm;
-    margin: 1cm 6cm 1cm 1.5cm;
     float: left;
 }
 .imgviaggi{
-    width: 28cm;
-    height: 19cm;
-    margin-top: 0cm;
-    margin-left: 18cm;
-    box-shadow: 10px 10px 5px rgba(168, 168, 168, 0.42);
+    width: 26cm;
+    height: 17cm;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    margin-left: 20cm;
+    box-shadow: 10px 10px 5px rgba(168, 168, 168, 0.226);
 }
   .anteprima{
-    background-color: rgb(0,0,0,0.0);
+    background-color: rgba(255, 255, 255, 0.562);
     height: 30cm;
-    max-width: 100%;
+    width: 100%;
     display: flex;
     margin-top: 10cm;
   }
@@ -162,13 +163,13 @@ ul li:hover ul{
 .page{
     margin-top: 6cm;
     width: 100%;
+    background-color: rgba(255, 255, 255, 0.562);
 }
 
 .tr_img {
-    position: relative;
-    float: left;
     margin-top: 1cm;
-    
+    margin-bottom: 15cm;
+    margin-left: 18%;
 }
   
 .tr_img img{
@@ -179,3 +180,9 @@ ul li:hover ul{
 .tr_img img.sopra:hover{
     opacity:0;
 }
+.divimagini{
+    width: 100%;
+    margin-top: 1cm;
+}
+
+/*<a class="titoloant">Qui sotto vi sono le anteprime delle località che vi offriamo.</a>*/
