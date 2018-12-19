@@ -12,10 +12,11 @@ body {
     height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
-    background-image: url("img/sfondo.jpg");
+    background-image: url("img/map-of-the-world-2401458_960_720.jpg");
+    background-size: cover;
 }
 .menu{
-    background-color:rgba(255, 255, 255, 0.884);
+    background-color:rgb(255, 255, 255);
     top: 0;
     padding-top: 10px;
     position: absolute;
@@ -102,7 +103,8 @@ ul li:hover ul{
     text-align: left;
 }
 .titoloant{
-    margin-left: 10%;
+    margin-left: 0%;
+    padding-left: 0%;
     color: rgb(0, 65, 59);
     font-size: 0.8cm;
     font-family: 'Courier New', Courier, monospace;
@@ -133,7 +135,7 @@ ul li:hover ul{
     height: 19cm;
     margin-top: 0cm;
     margin-left: 18cm;
-    box-shadow: 10px 10px 5px rgb(168, 168, 168);
+    box-shadow: 10px 10px 5px rgba(168, 168, 168, 0.42);
 }
   .anteprima{
     background-color: rgb(0,0,0,0.0);
