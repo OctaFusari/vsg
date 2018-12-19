@@ -164,10 +164,9 @@ ul li:hover ul{
 
 .tr_img {
     position: relative;
-    margin-top: 1cm;
-    margin: 5cm 6cm 5cm 5cm;
     float: left;
-
+    margin-top: 1cm;
+    
 }
   
 .tr_img img{
