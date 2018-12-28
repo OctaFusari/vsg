@@ -3,6 +3,7 @@ html {
     overflow: hidden;
   }
 body {
+    word-wrap:break-word !important;
     margin:0;
     padding:0;
       -webkit-perspective: 1px;
@@ -15,79 +16,112 @@ body {
     background-image: url("img/map-of-the-world-2401458_960_720.jpg");
     background-size: cover;
 }
-.menu{
-    background-color:rgb(255, 255, 255);
-    top: 0;
-    padding-top: 10px;
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 1.5cm;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    font-family: 'Courier New', Courier, monospace;
-}
-.nomeaz{
+
+#logo{
     font-family: 'Lobster', cursive;
     color: #ca932b;
-    float: left;
-    margin-left: 0.5cm;
+    margin-right: 1cm;
+    position: absolute;
+    border: 2px solid rgba(0, 60, 88, 0.548);
     margin-top: 5px;
+}
+#logo2{
+    font-family: 'Lobster', cursive;
+    color: #ca932b;
     margin-right: 1cm;
     border: 2px solid rgba(0, 60, 88, 0.548);
+    margin-top: 10px;
+    margin-bottom: 0%;
+    margin-left: 8px;
 }
-.c_menu{
-    text-align: left;
-    color: rgb(255, 255, 255);
-    padding-top: 0.3cm;
+ul{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0;
+    margin-top: 0%;
+	list-style-type: none;
+	background: #e0e0e0;
+	position: relative;
+}
 
+ul li {
+    display: inline-block;
 }
-.amenu:hover{
+
+ul li a {
+    color: #af7f25;
+	text-decoration: none;
+	padding: 15px;
+    display: block;
+    text-transform: uppercase;
+}
+ul li a:hover {
     color: rgba(0, 60, 88, 0.548);
     -webkit-transition: color 250ms ease;
     transition: color 250ms ease;
 }
-.amenu{
-    color: #b37b13;
-    text-decoration: none;
-    text-align: left;
-    margin-left: 0px;
-    padding-left: 0px;
-    font-size: 17px;
-    display: block;
-    text-transform: uppercase;
 
-}
-.menutend{
-    background-color: rgba(255, 255, 255);
-}
-ul li ul{
-    display:none;
-    position: relative;
-
-}
-ul{
-    list-style: none;
-
+ul ul {
+	position: absolute;
+	min-width: 200px;
+	background: lightgrey;
+	display: none;
 }
 
-ul li:hover ul{
-    display:block;
-    position: absolute;
-    padding-left: 1%;
-    padding-top: 0.4cm;
-    height: 250%;
-    width: 12%;
-
+ul ul li {
+	display: block;
+	background: #e3e3e3;
 }
 
-.c_menu_index{
-    float: left;
-    text-align: left;
-    margin-right: 2cm;
-    margin-top: -2px;
+ul li:hover ul {
+	display: block;
+}
 
+ul li i {
+	color: #292929;
+	float: right;
+	padding-left: 20px;
+}
+
+nav div {
+	background: lightgrey;
+	color: #292929;
+	font-size: 24px;
+    padding-left: 1cm;
+	cursor: pointer;
+	display: none;
+}
+
+@media(max-width: 768px) {
+	nav div {
+        margin-top: 0%;
+        padding-top: 0%;
+        display: block;
+        background-color: #e0e0e0;
+        height: 1.5cm;
+    }
+    #logo{
+        font-size: 1cm;
+        border: 1px solid rgba(0, 60, 88, 0.548);
+    }
+    .logo2c{
+        display: none;
+        background: rgba(0, 0, 0, 0);
+    }
+
+	ul {
+		  display: none;
+		  position: static;
+		  background: #e3e3e3;
+	}
+
+	ul li {
+		  display: block;
+    }
+
+	ul ul {
+		  position: static;
+		  background: #e3e3e3;
+	}
 }
 
 .titoli1{
@@ -145,25 +179,11 @@ ul li:hover ul{
     display: flex;
     margin-top: 10cm;
   }
-  
-@media only screen and (max-width:800px) {
-    .MainContainer {
-      width: 80%;
-      padding: 0;
-    }
-    .ParallaxContainer {
-      width: 100%;
-    }
-  }
-  @media only screen and (max-width:500px) {
-    .MainContainer {
-      width: 100%;
-    }
-}
 .page{
     margin-top: 6cm;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.562);
+    position: static
 }
 
 .tr_img {
@@ -185,4 +205,37 @@ ul li:hover ul{
     margin-top: 1cm;
 }
 
-/*<a class="titoloant">Qui sotto vi sono le anteprime delle località che vi offriamo.</a>*/
+@media only screen and (max-width:10cm){
+    .titoli2{
+        font-size: 0.4cm;
+        width: 100%;
+        margin-left: 1%;
+        padding-left: 1%;
+    }
+    .titoli1{
+        font-size: 0.5cm;
+        width: 100%;
+        margin-left: 1%;
+        padding-left: 1%;
+    }
+    .ptesto{
+        margin-top: 1cm;
+        width: 100%;
+        margin-left: 0%;
+        padding-left: 0%;
+    }
+    .page{
+        height: 8cm;
+    }
+    .tr_img{
+        clear: right;
+        display: block;
+    }
+    .image1{
+        width: 9cm;
+        height: 6cm;
+        clear: right;
+        display: block;
+    }
+
+}
