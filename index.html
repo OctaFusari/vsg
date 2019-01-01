@@ -9,15 +9,15 @@
     <link rel="icon" href="img/logo.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lobster|Noto+Sans:700" rel="stylesheet" type="text/css">
     <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-</head>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Righteous" rel="stylesheet"> </head>
 <body>
     <nav>
         <div>
-            <h1 id="logo">Viaggi so Good</h1>
+            <h1 id="logo"> - VGS - </h1>
         </div>
         <ul>
             <li class="logo2c"><h1 id="logo2">Viaggi so Good</h1></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#">Chi siamo?</a></li>
             <li><a href="#">Località che ti offriamo<i class="fa fa-sort-desc"></i></a>
                 <ul>
                     <li><a href="Brentonico.html">Brentonico</a></li>
@@ -29,53 +29,66 @@
             </li>
             <li><a href="index.html">HOME</a></li>
         </ul>
+        <script type="text/javascript">
+        $("nav div").click(function() {
+              $("ul").slideToggle();
+              $("ul ul").css("display", "none");
+        });
+        $("ul li").click(function() {
+              $("ul ul").slideUp();
+              $(this).find('ul').slideToggle();
+        });
+        $(window).resize(function() {
+              if($(window).width() > 768) {
+                    $("ul").removeAttr('style');
+              }
+        });
+        </script>
     </nav>
-    <script type="text/javascript">
-    $("nav div").click(function() {
-          $("ul").slideToggle();
-          $("ul ul").css("display", "none");
-    });
-    $("ul li").click(function() {
-          $("ul ul").slideUp();
-          $(this).find('ul').slideToggle();
-    });
-    $(window).resize(function() {
-          if($(window).width() > 768) {
-                $("ul").removeAttr('style');
-          }
-    });
-    </script>
-    <div class="page">
-        <div class="ptesto">
-            <h3 class="titoli2">"Quando vivi in un luogo a lungo, diventi cieco perché non osservi più nulla..."</h3>
-            <h1 class="titoli1">Non essere cieco, viaggia con "Viaggi so Good" !</h1>
-            <a class="titoli2">Powered by OFdesign</a>
+    <div class="mezzo">
+        <div class="page">
+            <div class="ptesto">
+                <a class="titoli2">"Quando vivi in un luogo a lungo, diventi cieco perché non osservi più nulla..."</a>
+                <h1 class="titoli1">Non essere cieco, viaggia con "Viaggi so Good" !</h1>
+                <a class="titoli2">Powered by OFdesign</a>
+            </div>
         </div>
-        <img src="img/viaggi.jpg" alt="img viaggi" class="imgviaggi">
-    </div>
-
-    <div class="anteprima">
-        <a class="titoloant">Qui sotto vi sono le anteprime delle località che vi offriamo.</a>
-        <div class="divimagini">
-            <div class="tr_img">
-                <a href="Kilimanjaro.html"><img class="image1" src="img/kilimanjaro.jpg">
-                <a href="Kilimanjaro.html"><img class="sopra , image1" src="img/kili.jpg">
-            </div>
-            <div class="tr_img">
-                <a href="Waitakere.html"><img class="image1" src="img/Waitakere.jpg">
-                <a href="Waitakere.html"><img class="sopra , image1" src="img/waitak.jpg">
-            </div>
-        </div>    
-        <div class="divimagini">
-            <div class="tr_img">
-                <a href="Brentonico.html"><img class="image1" src="img/Brentonico.jpg">
-                <a href="Brentonico.html"><img class="sopra , image1" src="img/brent.jpg">
-            </div>
-            <div class="tr_img">
-                <a href="Unguja.html"><img class="image1" src="img/Unguja.jpg">
-                <a href="Unguja.html"></a><img class="sopra , image1" src="img/ung.jpg">
-            </div>  
+        <div class="anteprima">
+            <a class="titoloant">Qui sotto vi sono le anteprime delle località che vi offriamo.</a>
+            <div id="divimg">
+                <figure>
+                <div class="imgscorrimento">
+                    <img class="image1" src="img/Unguja.jpg" alt>
+                </div>
+                <div class="imgscorrimento">
+                    <img img class="image1" src="img/Brentonico.jpg">
+                </div>
+                <div class="imgscorrimento">
+                    <img img class="image1" src="img/Waitakere.jpg">
+                </div>
+                <div class="imgscorrimento">
+                    <img img class="image1" src="img/kilimanjaro.jpg">
+                </div>
+                </figure>
+                <p>
+                    I nostri pacchetti di viaggio sono stati creati appositamente 
+                    per chi ha diverse esigenze. Abbiamo diversi luoghi dove potete andare, dal mare fino alle alte quote, tutto questo accompagnato da attività che vi offriamo incluse nel pacchetto che speriamo rendino la vostra vacanza un'esperienza so good.
+                </p>
+            </div> 
         </div>
     </div>
+    <footer class="footer">
+        <div>
+            <ul>
+                <li class="footerul">Contattaci</li>
+                <li class="footerul">Chi siamo?</li>
+                <li class="footerul">Brentonico 38060 Province of Trento </li>
+                <li class="footerul">fusarioctavian@gmail.com</li>
+            </ul>
+        </div>
+        <div>
+            ®OF | all right reserved 
+        </div>
+    </footer>
 </body>
 </html>
