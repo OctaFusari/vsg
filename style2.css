@@ -182,6 +182,7 @@ nav div {
 footer{
     border-top: #af7914 solid 0.5px;
     background-color: rgba(0, 0, 0, 0.486);
+    margin-top: 10cm;
     margin-bottom: 0%;
 }
 
@@ -218,13 +219,17 @@ footer{
 .offerte{
     width: 100%;
     background-color: #e0e0e09c;
-    height: 18cm;
+    height: 20cm;
     padding-left: 15%;
+    margin-top: 10cm;
 }
 
 h2{
     font-family: 'Amatic SC', cursive;
-    margin-left: 27%;
+    margin-left: 20%;
+    padding-top: 1cm;
+    margin-bottom: 1cm;
+    font-size: 1cm;
 }
 
 .of1{
@@ -232,53 +237,111 @@ h2{
     float: left;
     height: 10cm;
     margin-right: 1cm;
-    background-color: #e0e0e0;
+    background-color: #eeeeee;
     transition: all 0.5s ease-in-out;
 }
 
 .of1:hover{
-    height: 18cm;
+    height: 13cm;
     width: 10cm;
+    background-color: beige;
 }
-
 .of1:hover table{
-    height: 18cm;
-    width: 10cm;
     display: block;
+}
+.of1:hover h3{
+    display: block;
+}
+.of1:hover .costo{
+    display: block;
+    background-color: #c7e2ff;
+    color: rgb(38, 45, 85);
+}
+.of1:hover .ilof{
+    font-size: 15px;
 }
 
 .of2{
     width: 8cm;
     float: left;
     height: 10cm;
-    background-color: #e0e0e0;
+    background-color: #eeeeee;
     transition: all 0.5s ease-in-out;
 }
 .of2:hover{
-    height: 18cm;
+    height: 12cm;
     width: 10cm;
+    background-color: beige;
+}
+.of2:hover table{
+    display: block;
+}
+.of2:hover h3{
+    display: block;
+}
+.of2:hover .costo{
+    display: block;
+    background-color: #c7e2ff;
+    color: rgb(38, 45, 85);
+}
+.of2:hover .ilof{
+    font-size: 15px;
 }
 
 .titolopacchetti{
-    text-align: center;
+    margin-left: -0.5cm;
     font-family: 'Amatic SC', cursive;
     text-shadow: aquamarine 1px 1px;
 }
 
 .ulof{
     display: block;
-    margin-left: 3px;
+    margin-left: 1px;
+    background-color: transparent;
+}
+
+.ilof{
+    color: rgb(26, 26, 26);
+    font-size: 18px;
+    display: block;
 }
 
 table{
+    margin-left: 1cm;
+    margin-right: 1cm;
+    margin-top: 1cm;
     position: relative;
     display: none;
-    transition: all 0.5s ease-in-out;
+    font-family: "apercu",sans-serif;
+    color: rgb(61, 61, 61);
+    border: 1px solid rgba(0, 128, 0, 0.315);
+}
+
+
+.trmezzo{
+    border-right: 1px solid rgba(0, 128, 0, 0.315);
 }
 
 h3{
+    margin-left: 0.5cm;
     position: relative;
     display: none;
+    font-family: 'Amatic SC', cursive;
+    color: green;
+}
+
+.costo{
+    background-color: rgba(0, 162, 255, 0.589);
+    border: transparent 1px solid;
+    border-radius: 8px;
+    width: 5cm;
+    color: rgba(255, 255, 255, 0.63);
+    box-align: center;
+    font-family: "apercu",sans-serif;
+    display: none;
+    height: 1cm;
+    font-size: 0.7cm;
+    transition: color 1s ease-in-out;
 }
 
 
