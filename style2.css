@@ -2,9 +2,8 @@ html {
     height: 100%;
     overflow: hidden;
 }
-
-.bodyindex{
-    background-image: url(img/air.jpg);
+.bodyBrentonico{
+    background-image: url(img/bimg3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     word-wrap:break-word !important;
@@ -18,7 +17,6 @@ html {
     overflow-x: hidden;
     height: 100%;
 }
-
 #logo{
     font-family: 'Lobster', cursive;
     color: #ca932b;
@@ -149,12 +147,14 @@ nav div {
 
 .mezzo{
     margin-top: 6cm;
+    height: 30cm;
 }
 
 .titoli1{
     font-family: 'Amatic SC', cursive;
     font-size: 1.4cm;
     color: rgb(0, 65, 59);
+    padding-right: 2cm;
     padding-left: 2cm;
 
 }
@@ -170,81 +170,13 @@ nav div {
     text-align: left;
 }
 
-.titoloant{
-    color: rgb(0, 65, 59);
-    font-size: 0.8cm;
-    font-family: 'Amatic SC', cursive;    
-    background-image: linear-gradient( to center rgba(255, 255, 255, 0.315) , #ae4240);
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    font-size: 1cm;
-    font-weight: 900;
-    text-shadow: #ca932b 1px 1px;
-}
-
 .ptesto{
     background: rgba(242, 254, 255, 0.829);
-    width: 60%;
+    width: 75%;
     margin-top: 2.5cm;
     padding-top: 0.5cm;
-    height: 6cm;
+    height: 8cm;
     margin-left: 1cm;
-}
-
-  .anteprima{
-    background-image: linear-gradient( #0d0f3f , #ae4240);
-    height: 30cm;
-    width: 100%;
-    display: flex;
-  }
-
-.page{
-    width: 100%;
-    background-image: url(img/ee.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 1920px;
-    height: 20cm;
-}
-
-.image1{
-    width: 26cm;
-    height: 17cm;
-}
-
-@keyframes slidy {
-    0% { left: 0%; }
-    20% { left: 0%; }
-    25% { left: -100%; }
-    45% { left: -100%; }
-    50% { left: -200%; }
-    70% { left: -200%; }
-    75% { left: -300%; }
-    95% { left: -300%; }
-    100% { left: -400%; }
-    } 
-    div#divimg { overflow: hidden; }
-    div#divimg figure .imgscorrimento { width: 20%; float: left; }
-    div#divimg figure { 
-      position: relative;
-      width: 500%;
-      margin-left: 1%;
-      margin-top: 4%;
-      animation: 30s slidy infinite; 
-    }
-
-p{
-    text-justify: distribute;
-    text-align: justify;
-    margin-left: 27cm;
-    margin-right: 1cm;
-    position: absolute;
-    font-family: 'Amatic SC', cursive;  
-    color: #af7914;
-    font-size: 36px;
-    font-weight: 200;
-    text-shadow: rgb(0, 65, 59) 1px 1px;
 }
 
 footer{
@@ -282,3 +214,74 @@ footer{
     margin-right: 3cm;
     height: 3cm;
 }
+
+.offerte{
+    width: 100%;
+    background-color: #e0e0e09c;
+    height: 18cm;
+    padding-left: 15%;
+}
+
+h2{
+    font-family: 'Amatic SC', cursive;
+    margin-left: 27%;
+}
+
+.of1{
+    width: 8cm;
+    float: left;
+    height: 10cm;
+    margin-right: 1cm;
+    background-color: #e0e0e0;
+    transition: all 0.5s ease-in-out;
+}
+
+.of1:hover{
+    height: 18cm;
+    width: 10cm;
+}
+
+.of1:hover table{
+    height: 18cm;
+    width: 10cm;
+    display: block;
+}
+
+.of2{
+    width: 8cm;
+    float: left;
+    height: 10cm;
+    background-color: #e0e0e0;
+    transition: all 0.5s ease-in-out;
+}
+.of2:hover{
+    height: 18cm;
+    width: 10cm;
+}
+
+.titolopacchetti{
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    text-shadow: aquamarine 1px 1px;
+}
+
+.ulof{
+    display: block;
+    margin-left: 3px;
+}
+
+table{
+    position: relative;
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+
+h3{
+    position: relative;
+    display: none;
+}
+
+
+
+
+
