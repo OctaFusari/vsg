@@ -2,8 +2,7 @@ html {
     height: 100%;
     overflow: hidden;
 }
-.bodyBrentonico{
-    background-image: url(img/bimg3.jpg);
+body{
     background-repeat: no-repeat;
     background-size: cover;
     word-wrap:break-word !important;
@@ -16,6 +15,21 @@ html {
     overflow-y: scroll;
     overflow-x: hidden;
     height: 100%;
+}
+.bodyBrentonico{
+        background-image: url(img/immaginibrentonico/bimg3.jpg);
+}
+.bodyFiji{
+    background-image: url(img/immaginiFiji/fijibg.jpg);
+}
+.bodyBrentonico{
+    background-image: url(img/immaginibrentonico/bimg3.jpg);
+}
+.bodyBrentonico{
+    background-image: url(img/immaginibrentonico/bimg3.jpg);
+}
+.bodyBrentonico{
+    background-image: url(img/immaginibrentonico/bimg3.jpg);
 }
 #logo{
     font-family: 'Lobster', cursive;
@@ -59,7 +73,7 @@ ul li {
 }
 
 ul li a {
-    color: #af7f25;
+    color: rgba(0, 60, 88, 0.76);
     text-decoration: none;
 	padding: 15px;
     display: block;
@@ -69,7 +83,7 @@ ul li a {
 }
 
 ul li a:hover {
-    color: rgba(0, 60, 88, 0.548);
+    color:  #af7f25;
     text-decoration: underline;
 }
 
@@ -146,8 +160,9 @@ nav div {
 }
 
 .mezzo{
-    margin-top: 6cm;
+    margin-top: 7cm;
     height: 30cm;
+    margin-bottom: 1cm;
 }
 
 .titoli1{
@@ -160,12 +175,12 @@ nav div {
 }
 
 .titoli2{
-    font-family: "apercu",sans-serif;
+    font-family: 'Lobster', cursive;
     margin-bottom: 1cm;
     margin-top: 0.5cm;
-    color: #af7914;
+    color: #45691b;
     padding-left: 2cm;
-    font-size: 20px;
+    font-size: 26px;
     font-weight: 100;
     text-align: left;
 }
@@ -182,8 +197,8 @@ nav div {
 footer{
     border-top: #af7914 solid 0.5px;
     background-color: rgba(0, 0, 0, 0.486);
-    margin-top: 10cm;
     margin-bottom: 0%;
+    margin-top: 2cm;
 }
 
 .footerul {
@@ -222,6 +237,7 @@ footer{
     height: 20cm;
     padding-left: 15%;
     margin-top: 10cm;
+    display: inline-block;
 }
 
 h2{
@@ -241,26 +257,6 @@ h2{
     transition: all 0.5s ease-in-out;
 }
 
-.of1:hover{
-    height: 13cm;
-    width: 10cm;
-    background-color: beige;
-}
-.of1:hover table{
-    display: block;
-}
-.of1:hover h3{
-    display: block;
-}
-.of1:hover .costo{
-    display: block;
-    background-color: #c7e2ff;
-    color: rgb(38, 45, 85);
-}
-.of1:hover .ilof{
-    font-size: 15px;
-}
-
 .of2{
     width: 8cm;
     float: left;
@@ -269,9 +265,9 @@ h2{
     transition: all 0.5s ease-in-out;
 }
 .of2:hover{
-    height: 12cm;
+    height: 13cm;
     width: 10cm;
-    background-color: beige;
+    background-color: rgb(247, 247, 232);
 }
 .of2:hover table{
     display: block;
@@ -284,14 +280,27 @@ h2{
     background-color: #c7e2ff;
     color: rgb(38, 45, 85);
 }
-.of2:hover .ilof{
-    font-size: 15px;
+.of1:hover{
+    height: 13cm;
+    width: 10cm;
+    background-color: rgb(247, 247, 232);
+}
+.of1:hover table{
+    display: block;
+}
+.of1:hover h3{
+    display: block;
+}
+.of1:hover .costo{
+    display: block;
+    background-color: #c7e2ff;
+    color: rgb(38, 45, 85);
 }
 
 .titolopacchetti{
     margin-left: -0.5cm;
     font-family: 'Amatic SC', cursive;
-    text-shadow: aquamarine 1px 1px;
+    text-shadow: #7ba34d 1px 1px;
 }
 
 .ulof{
@@ -302,7 +311,13 @@ h2{
 
 .ilof{
     color: rgb(26, 26, 26);
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 400;
+    display: block;
+}
+.ilof2{
+    color: rgb(26, 26, 26);
+    font-size: 14px;
     display: block;
 }
 
@@ -344,7 +359,28 @@ h3{
     transition: color 1s ease-in-out;
 }
 
+.galleriaimmagini{
+    height: 20cm;
+    width: 100%;
+}
+.image1{
+    width: 16cm;
+    height: 10cm;
+    transition: all 0.5s ease-in-out;
+    margin: 0.3cm;
+}
+.image1:hover{
+    width: 16.2cm;
+    height: 10.2cm;
+    margin: 0.1cm;
+    margin-right:0.3cm;
+}
 
+.divimg {
+    padding-left: 0.2cm;
+    width: 100%;
+    background-color: #e0e0e09c;
+} 
 
 
 
