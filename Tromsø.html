@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tromsø</title>
+    <link rel="stylesheet" href="style2.css" type="text/css">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Noto+Sans:700" rel="stylesheet" type="text/css">
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Righteous" rel="stylesheet"> </head>
+</head>
+<body class="bodyN">
+    <nav>
+        <div>
+            <h1 id="logo"> - VGS - </h1>
+        </div>
+        <ul>
+            <li class="logo2c"><h1 id="logo2">Viaggi so Good</h1></li>
+            <li><a href="#">Chi siamo?</a></li>
+            <li><a href="#">Località che ti offriamo<i class="fa fa-sort-desc"></i></a>
+                <ul>
+                    <li><a href="Monte-Baldo.html">Brentonico</a></li>
+                    <li><a href="Fiji.html">Isole Fiji</a></li>
+                    <li><a href="Kilimanjaro.html">Kilimanjaro</a></li>
+                    <li><a href="Ruaha.html">Ruaha</a></li>
+                    <li><a href="Tromsø.html">Tromsø</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html">HOME</a></li>
+        </ul>
+        <script type="text/javascript">
+        $("nav div").click(function() {
+              $("ul").slideToggle();
+              $("ul ul").css("display", "none");
+        });
+        $("ul li").click(function() {
+              $("ul ul").slideUp();
+              $(this).find('ul').slideToggle();
+        });
+        $(window).resize(function() {
+              if($(window).width() > 768) {
+                    $("ul").removeAttr('style');
+              }
+        });
+        </script>
+    </nav>
+    <div class="mezzo">
+        <div class="ptesto">
+            <a class="titoli2">- Tromsø -</a>
+            <h1 class="titoli1">Aurora Boreale, sole a mezzanotte e cattedrali di ghiaccio</h1>
+            <a class="titoli2">Se ami i paesaggi tra il reale e il fantastico questo è il posto che noi abbiamo scelto per te</a>
+            <a class="titoli3">Powered by lil_fus_octi</a>
+        </div>
+        <div class="offerte">
+            <h2>Parti per Tromsø con le nostre offerte</h2>
+            <div class="of1">
+                <h1 class="titolopacchetti">Pacchetto estate</h1>
+                <ul class="ulof">
+                    <li class="ilof"> Soggiorno:</li>
+                    <li class="ilof2"> Una camera per 2 adulti | Numero notti: 9</li>
+                    <li class="ilof">Partenza:</li>
+                    <li class="ilof2"> 10/07/2019</li>
+                    <li class="ilof">Inizio soggiorno:</li>
+                    <li class="ilof2"> 11/07/2019</li>
+                    <li class="ilof">Trattamento:</li>
+                    <li class="ilof2"> ALL INCLUSIVE </li>
+                </ul>
+                <h3>Incluso nel Pacchetto</h3>
+                <table>
+                    <tr>
+                        <td class="trmezzo">Nolleggio Bici(gratuito)</td>
+                        <td>Attrezzatura per il nuoto</td>
+                    </tr>
+                    <tr>
+                        <td class="trmezzo">escursione con un'esperto(sia terra che mare)</td>
+                        <td>colazione nell'alloggio</td>
+                    </tr>
+                    <tr>
+                        <td class="trmezzo">1 giro in elicottero sopra l'arcipelago</td>
+                        <td>Palestra interna</td>
+                    </tr>
+                </table>
+                <h2 class="costo">Costo: 1.300$</h2>
+            </div>
+            <div class="of1">
+                <h1 class="titolopacchetti">Pacchetto Autunno</h1>
+                <ul class="ulof">
+                    <li class="ilof"> Soggiorno:</li>
+                    <li class="ilof2"> Una camera per 2 adulti | Numero notti: 7</li>
+                    <li class="ilof">Partenza:</li>
+                    <li class="ilof2"> 10/10/2019</li>
+                    <li class="ilof">Inizio soggiorno:</li>
+                    <li class="ilof2"> 11/10/2019</li>
+                    <li class="ilof">Trattamento:</li>
+                    <li class="ilof2"> ALL INCLUSIVE </li>
+                </ul>
+                <h3>Incluso nel Pacchetto</h3>
+                <table>
+                    <tr>
+                        <td class="trmezzo">Nolleggio Bici(gratuito)</td>
+                        <td>Attrezzatura per il nuoto</td>
+                    </tr>
+                    <tr>
+                        <td class="trmezzo">escursione con un'esperto(sia terra che mare)</td>
+                        <td>colazione nell'alloggio</td>
+                    </tr>
+                    <tr>
+                        <td class="trmezzo">1 giro in elicottero sopra l'arcipelago</td>
+                        <td>Palestra interna</td>
+                    </tr>
+                </table>
+                <h2 class="costo">Costo: 1.050$</h2>
+            </div>
+            <div class="of1">
+                <h1 class="titolopacchetti">Pacchetto Inverno</h1>
+                <ul class="ulof">
+                    <li class="ilof"> Soggiorno:</li>
+                    <li class="ilof2"> Una camera per 2 adulti | Numero notti: 7</li>
+                    <li class="ilof">Partenza:</li>
+                    <li class="ilof2"> 10/12/2019</li>
+                    <li class="ilof">Inizio soggiorno:</li>
+                    <li class="ilof2"> 11/12/2019</li>
+                    <li class="ilof">Trattamento:</li>
+                    <li class="ilof2"> ALL INCLUSIVE </li>
+                </ul>
+                <h3>Incluso nel Pacchetto</h3>
+                <table>
+                    <tr>
+                        <td class="trmezzo">Nolleggio Bici(gratuito)</td>
+                        <td>Attrezzatura per il nuoto</td>
+                    </tr>
+                    <tr>
+                        <td class="trmezzo">escursione con un'esperto(sia terra che mare)</td>
+                        <td>colazione nell'alloggio</td>
+                    </tr>
+                    <tr>
+                        <td class="trmezzo">1 giro in elicottero sopra l'arcipelago</td>
+                        <td>Palestra interna</td>
+                    </tr>
+                </table>
+                <h2 class="costo">Costo: 10.000$</h2>
+            </div>
+            <div class="of2">
+                <h1 class="titolopacchetti">Pacchetto Primavera</h1>
+                <ul class="ulof">
+                    <li class="ilof"> Soggiorno:</li>
+                    <li class="ilof2"> Una camera per 2 adulti | Numero notti: 7</li>
+                    <li class="ilof">Partenza:</li>
+                    <li class="ilof2"> 10/04/2019</li>
+                    <li class="ilof">Inizio soggiorno:</li>
+                    <li class="ilof2"> 11/04/2019</li>
+                    <li class="ilof">Trattamento:</li>
+                    <li class="ilof2"> ALL INCLUSIVE </li>
+                </ul>
+                <h3>Incluso nel Pacchetto</h3>
+                <table>
+                    <tr>
+                        <td class="trmezzo">Nolleggio Bici(gratuito)</td>
+                        <td>Attrezzatura per il nuoto</td>
+                    </tr>
+                    <tr>
+                        <td class="trmezzo">escursione con un'esperto(sia terra che mare)</td>
+                        <td>colazione nell'alloggio</td>
+                    </tr>
+                    <tr>
+                        <td class="trmezzo">1 giro in elicottero sopra l'arcipelago</td>
+                        <td>Palestra interna</td>
+                    </tr>
+                </table>
+                <h2 class="costo">Costo: 1.100$</h2>
+            </div>
+        </div>
+        <div class="divimg">
+            <img class="image1" src="img/immaginiNorvegia/nimg1.jpg" alt="immagine luoghi">
+            <img class="image1" src="img/immaginiNorvegia/nimg6.jpg" alt="immagine luoghi">
+            <img class="image1" src="img/immaginiNorvegia/nimg2.jpg" alt="immagine luoghi">
+            <img class="image1" src="img/immaginiNorvegia/nimg3.jpg" alt="immagine luoghi">
+            <img class="image1" src="img/immaginiNorvegia/nimg5.jpg" alt="immagine luoghi">  
+            <img class="image1" src="img/immaginiNorvegia/nimg4.jpg" alt="immagine luoghi">
+        </div>
+    </div>
+    <div style="width: 100%; margin-top: 35cm; background-color:#e0e0e09c; padding-left: 2cm">Scusi prof ma non va con il css
+        <div style="width: 700px;"><iframe width="700" height="440" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=Troms%C3%B8+(Title)&amp;ie=UTF8&amp;t=&amp;z=6&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><br />
+    </div>
+    <footer>
+        <ul class="info">
+            <li class="footerul"><a class="afoot">Contattaci</a></li>
+            <li class="footerul"><a class="afoot">Brentonico TN CAP:38060 </a></li>
+            <li class="footerul"><a class="afoot" href="mailto:fusarioctavian@gmail.com">fusarioctavian@gmail.com</a></li>
+            <li class="footerul"><a class="afoot" href="tel:+34 327 3133 722">+34 327 3133 722</a></li>
+        </ul>
+        <h4 class="afoot2">®OFdesign in partnership with ®VGS | all right reserved</h4> 
+    </footer>
+</body>
+</html>
