@@ -6,7 +6,7 @@ html {
 body{
     background-repeat: no-repeat;
     background-size: cover;
-    word-wrap:break-word !important;
+    word-wrap:break-word;
     margin:0;
     padding:0;
       -webkit-perspective: 1px;
@@ -19,19 +19,19 @@ body{
 }
 
 .bodyBrentonico{
-        background-image: url(img/immaginibrentonico/bimg3.jpg);
+        background-image: url(/img/immaginibrentonico/bimg3.jpg);
 }
 .bodyFiji{
-    background-image: url(img/immaginiFiji/fijibg.jpg);
+    background-image: url(/img/immaginiFiji/fijibg.jpg);
 }
 .bodyN{
-    background-image: url(img/immaginiNorvegia/NGBG.gif);
+    background-image: url(/img/immaginiNorvegia/NGBG.gif);
 }
 .bodyK{
-    background-image: url(img/immaginiKilimanjaro/kgb.jpg);
+    background-image: url(/img/immaginiKilimanjaro/kgb.jpg);
 }
 .bodyR{
-    background-image: url(img/immaginiRuaha/RBG.jpg);
+    background-image: url(/img/immaginiRuaha/RBG.jpg);
 }
 
 #logo{
