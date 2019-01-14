@@ -18,6 +18,29 @@ body{
     height: 100%;
 }
 
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 100px 1fr 200px;
+}
+
+.logo2c {
+    grid-column: span 4;
+
+}
+.menu {
+    grid-column: span 8;
+}
+
+.mezzo {
+    grid-column: span 12;
+
+}
+
+.footer {
+    grid-column: span 12;
+}
+
 .bodyBrentonico{
         background-image: url(/img/immaginibrentonico/bimg3.jpg);
 }
@@ -212,8 +235,9 @@ nav div {
 footer{
     border-top: #af7914 solid 0.5px;
     background-color: rgba(0, 0, 0, 0.486);
-    margin-bottom: 0%;
-    margin-top: 2cm;
+    margin-bottom: -0.5cm;
+    margin-top: 3cm;
+    border: 0px;
 }
 
 .footerul {
