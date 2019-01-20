@@ -21,7 +21,7 @@ body{
 .wrapper {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 2cm 130cm 6cm;
+    grid-template-rows: 1cm 130cm 6cm;
 }
 
 .logo2c {
@@ -34,6 +34,9 @@ body{
 
 .mezzo {
     grid-column: span 12;
+    margin-top: 7cm;
+    height: 20cm;
+    margin-bottom: 1cm;
 }
 
 footer{
@@ -56,7 +59,7 @@ footer{
     background-image: url(/img/immaginiRuaha/RBG.jpg);
 }
 .bodyI{
-
+    background-image: url(/img/office.jpg);
 }
 
 #logo{
@@ -187,12 +190,6 @@ nav div {
     }
 }
 
-.mezzo{
-    margin-top: 7cm;
-    height: 20cm;
-    margin-bottom: 1cm;
-}
-
 .titoli1{
     font-family: 'Amatic SC', cursive;
     font-size: 1.4cm;
@@ -268,7 +265,7 @@ nav div {
 
 .offerte{
     width: 100%;
-    background-color: #e0e0e09c;
+    background: rgba(255, 255, 255, 0.829);
     height: 20cm;
     padding-left: 7%;
     margin-top: 10cm;
@@ -286,7 +283,6 @@ h2{
     font-size: 36px;
     padding-top: 0%;
     margin-top: 0%;
-    text-shadow: #45691b 1px 1px;
 }
 .h2dids2{
     font-family: 'Amatic SC', cursive;
@@ -294,14 +290,13 @@ h2{
     padding-top: 0%;
     margin-top: 0%;
     text-align: right;
-    text-shadow: #45691b 1px 1px;
 }
 .of1{
     width: 10cm;
     float: left;
     height: 12cm;
     margin-right: 1cm;
-    background-color: #eeeeee;
+    background-color: rgb(255, 255, 248);
     transition: all 0.5s ease-in-out;
 }
 
@@ -309,7 +304,7 @@ h2{
     width: 10cm;
     float: left;
     height: 12cm;
-    background-color: #eeeeee;
+    background-color: rgb(255, 255, 248);
     transition: all 0.5s ease-in-out;
 }
 
@@ -352,7 +347,6 @@ h2{
 .titolopacchetti{
     margin-left: -0.5cm;
     font-family: 'Amatic SC', cursive;
-    text-shadow: #7ba34d 1px 1px;
 }
 
 .ulof{
@@ -361,7 +355,7 @@ h2{
     background-color: transparent;
     font-size: 15px;
     font-weight: 300;
-    font-family: "apercu",sans-serif;
+    font-family: 'PT Sans', sans-serif;
     color: rgb(34, 34, 34);
     text-justify: distribute;
 }
@@ -369,9 +363,9 @@ h2{
     display: block;
     margin: 3% 3% 2% 1%;
     background-color: transparent;
-    font-size: 32px;
-    font-weight: 200;
-    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: 'PT Sans', sans-serif;
     color: rgb(34, 34, 34);
     text-justify: distribute;
 
@@ -380,10 +374,10 @@ h2{
     display: block;
     margin: 3% 3% 2% 1%;
     background-color: transparent;
-    font-size: 32px;
-    font-weight: 200;
+    font-size: 20px;
+    font-weight: 100;
     text-align: right;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'PT Sans', sans-serif;
     color: rgb(34, 34, 34);
     text-justify: distribute;
     
@@ -421,6 +415,7 @@ h3{
     color: rgba(255, 255, 255, 0.63);
     box-align: center;
     font-family: "apercu",sans-serif;
+    margin-left: 25%;
     display: none;
     height: 1cm;
     font-size: 0.7cm;
@@ -450,7 +445,7 @@ h3{
     padding-left: 0.0787402%;
     width: 100%;
     height: 400%;
-    background-color: #e0e0e09c;
+    background: rgba(255, 255, 255, 0.829);
 } 
 .dids1{
     width: 100%;
