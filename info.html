@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chi siamo?</title>
+    <link rel="stylesheet" href="style/style2.css" type="text/css">
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Noto+Sans:700" rel="stylesheet" type="text/css">
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Righteous" rel="stylesheet"> </head>
+</head>
+<body class="bodyI">
+    <div class="wrapper">
+        <nav class="menu">
+            <div>
+                <h1 id="logo"> - VGS - </h1>
+            </div>
+            <ul>
+                <li><h1 id="logo2">Viaggi so Good</h1></li>
+                <li><a href="info.html">Chi siamo?</a></li>
+                <li><a href="#">Località che ti offriamo<i class="fa fa-sort-desc"></i></a>
+                    <ul>
+                        <li><a href="Monte-Baldo.html">Brentonico</a></li>
+                        <li><a href="Fiji.html">Isole Fiji</a></li>
+                        <li><a href="Kilimanjaro.html">Kilimanjaro</a></li>
+                        <li><a href="Ruaha.html">Ruaha</a></li>
+                        <li><a href="Tromsø.html">Tromsø</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html">HOME</a></li>
+            </ul>
+            <script type="text/javascript">
+            $("nav div").click(function() {
+                  $("ul").slideToggle();
+                  $("ul ul").css("display", "none");
+            });
+            $("ul li").click(function() {
+                  $("ul ul").slideUp();
+                  $(this).find('ul').slideToggle();
+            });
+            $(window).resize(function() {
+                  if($(window).width() > 768) {
+                        $("ul").removeAttr('style');
+                  }
+            });
+            </script>
+        </nav>
+        <div class="mezzo">
+        </div>
+        <footer>
+            <ul class="info">
+                <li class="footerul"><a class="afoot">Contattaci</a></li>
+                <li class="footerul"><a class="afoot">Brentonico TN CAP:38060 </a></li>
+                <li class="footerul"><a class="afoot" href="mailto:fusarioctavian@gmail.com">fusarioctavian@gmail.com</a></li>
+                <li class="footerul"><a class="afoot" href="tel:+34 327 3133 722">+34 327 3133 722</a></li>
+            </ul>
+            <h4 class="afoot2">®OFdesign in partnership with ®VGS | all right reserved</h4> 
+        </footer>
+    </div>
+</body>
+</html>

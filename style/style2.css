@@ -21,7 +21,7 @@ body{
 .wrapper {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 100px 1fr 200px;
+    grid-template-rows: 2cm 130cm 6cm;
 }
 
 .logo2c {
@@ -29,20 +29,19 @@ body{
 
 }
 .menu {
-    grid-column: span 8;
+    grid-column: span 12;
 }
 
 .mezzo {
     grid-column: span 12;
-
 }
 
-.footer {
+footer{
     grid-column: span 12;
 }
 
 .bodyBrentonico{
-        background-image: url(/img/immaginibrentonico/bimg3.jpg);
+    background-image: url(/img/immaginibrentonico/bimg3.jpg);
 }
 .bodyFiji{
     background-image: url(/img/immaginiFiji/fijibg.jpg);
@@ -55,6 +54,9 @@ body{
 }
 .bodyR{
     background-image: url(/img/immaginiRuaha/RBG.jpg);
+}
+.bodyI{
+
 }
 
 #logo{
@@ -187,7 +189,7 @@ nav div {
 
 .mezzo{
     margin-top: 7cm;
-    height: 30cm;
+    height: 20cm;
     margin-bottom: 1cm;
 }
 
@@ -232,14 +234,6 @@ nav div {
     margin-left: 1cm;
 }
 
-footer{
-    border-top: #af7914 solid 0.5px;
-    background-color: rgba(0, 0, 0, 0.486);
-    margin-bottom: -0.5cm;
-    margin-top: 3cm;
-    border: 0px;
-}
-
 .footerul {
     display: block;
     width: 8cm;
@@ -252,8 +246,8 @@ footer{
 }
 
 .afoot:hover{
-    text-decoration: underline ;
     color: #ffffff;
+    text-decoration: none;
 }
 
 .info{
@@ -276,39 +270,52 @@ footer{
     width: 100%;
     background-color: #e0e0e09c;
     height: 20cm;
-    padding-left: 15%;
+    padding-left: 7%;
     margin-top: 10cm;
-    display: inline-block;
 }
 
 h2{
     font-family: 'Amatic SC', cursive;
     margin-left: 20%;
-    padding-top: 1cm;
-    margin-bottom: 1cm;
-    font-size: 1cm;
+    padding-top: 1%;
+    margin-bottom: 1%;
+    font-size: 2%;
 }
-
+.h2dids{
+    font-family: 'Amatic SC', cursive;
+    font-size: 36px;
+    padding-top: 0%;
+    margin-top: 0%;
+    text-shadow: #45691b 1px 1px;
+}
+.h2dids2{
+    font-family: 'Amatic SC', cursive;
+    font-size: 34px;
+    padding-top: 0%;
+    margin-top: 0%;
+    text-align: right;
+    text-shadow: #45691b 1px 1px;
+}
 .of1{
-    width: 8cm;
+    width: 10cm;
     float: left;
-    height: 10cm;
+    height: 12cm;
     margin-right: 1cm;
     background-color: #eeeeee;
     transition: all 0.5s ease-in-out;
 }
 
 .of2{
-    width: 8cm;
+    width: 10cm;
     float: left;
-    height: 10cm;
+    height: 12cm;
     background-color: #eeeeee;
     transition: all 0.5s ease-in-out;
 }
 
 .of2:hover{
-    height: 13cm;
-    width: 10cm;
+    height: 14cm;
+    width: 12cm;
     background-color: rgb(247, 247, 232);
 }
 .of2:hover table{
@@ -317,14 +324,17 @@ h2{
 .of2:hover h3{
     display: block;
 }
+.costo {
+    text-align: center;
+}
 .of2:hover .costo{
     display: block;
     background-color: #c7e2ff;
     color: rgb(38, 45, 85);
 }
 .of1:hover{
-    height: 13cm;
-    width: 10cm;
+    height: 14cm;
+    width: 12cm;
     background-color: rgb(247, 247, 232);
 }
 .of1:hover table{
@@ -347,21 +357,36 @@ h2{
 
 .ulof{
     display: block;
-    margin-left: 1px;
+    margin: 3% 3% 8% 3%;
     background-color: transparent;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: "apercu",sans-serif;
+    color: rgb(34, 34, 34);
+    text-justify: distribute;
 }
-
-.ilof{
-    color: rgb(26, 26, 26);
-    font-size: 16px;
-    font-weight: 400;
+.ulof1{
     display: block;
+    margin: 3% 3% 2% 1%;
+    background-color: transparent;
+    font-size: 32px;
+    font-weight: 200;
+    font-family: 'Amatic SC', cursive;
+    color: rgb(34, 34, 34);
+    text-justify: distribute;
+
 }
-
-.ilof2{
-    color: rgb(26, 26, 26);
-    font-size: 14px;
+.ulof2{
     display: block;
+    margin: 3% 3% 2% 1%;
+    background-color: transparent;
+    font-size: 32px;
+    font-weight: 200;
+    text-align: right;
+    font-family: 'Amatic SC', cursive;
+    color: rgb(34, 34, 34);
+    text-justify: distribute;
+    
 }
 
 table{
@@ -408,33 +433,42 @@ h3{
 }
 
 .image1{
-    width: 16cm;
-    height: 10cm;
+    width: 30%;
+    height: 30%;
     transition: all 0.5s ease-in-out;
-    margin: 0.3cm;
-}
-
-.image2{
-    width: 98%;
-    height: 10cm;
-    transition: all 0.5s ease-in-out;
-    margin: 0.3cm;
+    margin: 0.5%;
 }
 
 .image1:hover{
-    width: 16.2cm;
-    height: 10.2cm;
-    margin: 0.1cm;
-    margin-right:0.3cm;
-}
-.image2:hover {
-    width: 99%;
-    height: 10.2cm;
-    margin: 0.1cm;
+    width: 30.3%;
+    height: 30.3%;
+    margin-bottom: 0.3%;
+
 }
 
 .divimg {
-    padding-left: 0.2cm;
+    padding-left: 0.0787402%;
     width: 100%;
+    height: 400%;
     background-color: #e0e0e09c;
 } 
+.dids1{
+    width: 100%;
+    margin-bottom: 4%;
+    padding-top: 4%;
+    padding-bottom:4%;
+    display: inline-block;
+    border-bottom: solid rgb(112, 112, 112) 1px;
+    border-top: solid rgb(112, 112, 112) 1px;
+}
+.dids2{
+    margin-bottom: 4%;
+    width: 100%;
+    display: inline-block;
+}
+.dids2 .image1{
+    float: right;
+}
+.dids1 .image1{
+    float: left;
+}
