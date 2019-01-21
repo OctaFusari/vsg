@@ -149,43 +149,30 @@ nav div {
 
 .titoli1{
     font-family: 'Amatic SC', cursive;
-    font-size: 1.4cm;
+    font-size: 400%;
     color: rgb(0, 65, 59);
-    padding-right: 2cm;
-    padding-left: 2cm;
+    padding-left: 5%;
 }
 
 .titoli2{
     font-family: 'Lobster', cursive;
-    margin-bottom: 1cm;
-    margin-top: 0.5cm;
+    margin-bottom: 1%;
+    margin-top: 1%;
     color: #45691b;
-    padding-left: 2cm;
-    font-size: 26px;
+    padding-left: 5%;
+    font-size: 180%;
     font-weight: 100;
     text-align: left;
-    display: block;
-}
-
-.titoli3{
-    font-family: "apercu",sans-serif;
-    margin-bottom: 1cm;
-    margin-top: 0.5cm;
-    color: #1313138c;
-    padding-right: 2cm;
-    font-size: 20px;
-    font-weight: 100;
-    text-align: right;
     display: block;
 }
 
 .ptesto{
     background: rgba(242, 254, 255, 0.829);
     width: 75%;
-    margin-top: 2.5cm;
-    padding-top: 0.5cm;
-    height: 8.5cm;
-    margin-left: 1cm;
+    margin-top: 4%;
+    padding-top: 1%;
+    height: 40%;
+    margin-left: 1%;
 }
 
 .footerul {
@@ -223,17 +210,16 @@ nav div {
 .offerte{
     width: 100%;
     background: rgba(255, 255, 255, 0.829);
-    height: 20cm;
+    height: 95%;
     padding-left: 7%;
-    margin-top: 10cm;
+    margin-top: 20%;
 }
 
 .h2of{
     font-family: 'Amatic SC', cursive;
-    margin-left: 25%;
-    padding-top: 1%;
+    text-align: center;
     margin-bottom: 1%;
-    font-size: 1.4cm;
+    font-size: 360%;
 }
 .h2dids{
     font-family: 'Amatic SC', cursive;
@@ -251,7 +237,7 @@ nav div {
 .of1{
     width: 20%;
     float: left;
-    height:60%;
+    height: 70%;
     margin-right: 2%;
     background-color: rgb(255, 255, 248);
     transition: all 0.5s ease-in-out;
@@ -260,13 +246,13 @@ nav div {
 .of2{
     width: 20%;
     float: left;
-    height: 60%;
+    height: 70%;
     background-color: rgb(255, 255, 248);
     transition: all 0.5s ease-in-out;
 }
 
 .of2:hover{
-    height: 70%;
+    height: 75%;
     width: 25%;
     background-color: rgb(247, 247, 232);
 }
@@ -285,7 +271,7 @@ nav div {
     color: rgb(38, 45, 85);
 }
 .of1:hover{
-    height: 70%;
+    height: 75%;
     width: 25%;
     background-color: rgb(247, 247, 232);
 }
@@ -364,19 +350,24 @@ h3{
     color: green;
 }
 
-.costo{
+ .of1:hover .costo{
     background-color: rgba(0, 162, 255, 0.589);
-    border: transparent 1px solid;
+    color: rgba(32, 32, 32, 0.63);
+}
+
+    .costo{
+    background-color: rgba(0, 0, 0, 0);
     border-radius: 8px;
     width: 40%;
-    color: rgba(255, 255, 255, 0.63);
+    color: rgba(0, 0, 0, 0);
     box-align: center;
     font-family: "apercu",sans-serif;
     margin-left: 25%;
     display: none;
     height: 7%;
     font-size: 160%;
-    transition: color 1s ease-in-out;
+    transition: all 3s ease-out;
+
 }
 
 .galleriaimmagini{
@@ -467,7 +458,7 @@ h3{
     .wrapper {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 1cm 140cm 9cm;
+        grid-template-rows: 1cm 130cm 7cm;
     }
     .divimg{
         height: 445%;
@@ -480,22 +471,70 @@ h3{
         width: 90%;
         clear: right;
         margin-bottom: 3%;
-        height: 50%;
+        height: 18%;
     }
     
     .of2{
         width:90%;
         clear: right;
-        height: 50%;
+        height: 18%;
     }
     .of1:hover{
         width: 90%;
         margin-bottom: 1%;
-        height: 60%;
+        height: 25%;
     }
     
     .of2:hover{
         width:90%;
-        height: 60%;
+        height: 25%;
     }
+    .offerte{
+        margin-bottom: 20%;
+    }
+    .titoli1{
+        font-size: 200%;
+    }
+    
+    .titoli2{
+        font-size: 120%;
+        font-weight: 100;
+    }
+    .ptesto{
+        width: 100%;
+        margin-left: 0%;
+        padding-top: 20%;
+    }
+    .offerte{
+        height: 340%;
+    }
+
 }
+
+/*body {
+  margin: 40px;
+}
+
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  background-color: #fff;
+  color: #444;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.a {  grid-column-start: 1; 
+  grid-column-end: 5; 
+  grid-row-start: 1; 
+  grid-row-end: 3; 
+  text-align: center;
+}*/
