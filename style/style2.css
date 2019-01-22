@@ -21,13 +21,9 @@ body{
 .wrapper {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1cm 130cm 6cm;
+    grid-template-rows: 1cm 134cm 6cm;
 }
 
-.logo2c {
-    grid-column: span 4;
-
-}
 .menu {
     grid-column: span 12;
 }
@@ -35,7 +31,6 @@ body{
 .mezzo {
     grid-column: span 12;
     margin-top: 7cm;
-    height: 20cm;
     margin-bottom: 1cm;
 }
 
@@ -171,8 +166,9 @@ nav div {
     width: 75%;
     margin-top: 4%;
     padding-top: 1%;
-    height: 40%;
+    height: 7%;
     margin-left: 1%;
+    position: relative;
 }
 
 .footerul {
@@ -210,26 +206,25 @@ nav div {
 .offerte{
     width: 100%;
     background: rgba(255, 255, 255, 0.829);
-    height: 95%;
+    height: 20%;
     padding-left: 7%;
     margin-top: 20%;
 }
 
 .h2of{
     font-family: 'Amatic SC', cursive;
-    text-align: center;
     margin-bottom: 1%;
     font-size: 360%;
 }
 .h2dids{
     font-family: 'Amatic SC', cursive;
-    font-size: 36px;
+    font-size: 300%;
     padding-top: 0%;
     margin-top: 0%;
 }
 .h2dids2{
     font-family: 'Amatic SC', cursive;
-    font-size: 34px;
+    font-size: 300%;
     padding-top: 0%;
     margin-top: 0%;
     text-align: right;
@@ -237,7 +232,7 @@ nav div {
 .of1{
     width: 20%;
     float: left;
-    height: 70%;
+    height: 50%;
     margin-right: 2%;
     background-color: rgb(255, 255, 248);
     transition: all 0.5s ease-in-out;
@@ -246,45 +241,55 @@ nav div {
 .of2{
     width: 20%;
     float: left;
-    height: 70%;
+    height: 50%;
     background-color: rgb(255, 255, 248);
     transition: all 0.5s ease-in-out;
 }
 
 .of2:hover{
-    height: 75%;
+    height: 60%;
     width: 25%;
     background-color: rgb(247, 247, 232);
 }
 .of2:hover table{
-    display: block;
+    color: rgb(61, 61, 61);
+    border: 1px solid rgba(0, 128, 0, 0.315);
 }
 .of2:hover h3{
     display: block;
 }
-.costo {
+.costo{
+    background-color: transparent;
+    border-radius: 8px;
+    width: 40%;
+    color: transparent;
+    font-family: "apercu",sans-serif;
     text-align: center;
+    height: 5%;
+    font-size: 160%;
+    margin-left: 2%;
+    transition: all 0.7s ease-in-out;
 }
 .of2:hover .costo{
-    display: block;
-    background-color: #c7e2ff;
-    color: rgb(38, 45, 85);
+    background-color: rgb(0, 88, 139);
+    color: rgb(247, 247, 232);
 }
 .of1:hover{
-    height: 75%;
+    height: 60%;
     width: 25%;
     background-color: rgb(247, 247, 232);
 }
 .of1:hover table{
-    display: block;
+    color: rgb(61, 61, 61);
+    border: 1px solid rgba(0, 128, 0, 0.315);
 }
 .of1:hover h3{
     display: block;
 }
 .of1:hover .costo{
     display: block;
-    background-color: #c7e2ff;
-    color: rgb(38, 45, 85);
+    background-color: rgb(0, 88, 139);
+    color: rgb(247, 247, 232);
 }
 
 .titolopacchetti{
@@ -327,19 +332,13 @@ nav div {
 }
 
 table{
-    margin-left: 1cm;
-    margin-right: 1cm;
-    margin-top: 1cm;
-    position: relative;
-    display: none;
+    transition: all 1s ease-out;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
     font-family: "apercu",sans-serif;
-    color: rgb(61, 61, 61);
-    border: 1px solid rgba(0, 128, 0, 0.315);
-}
-
-
-.trmezzo{
-    border-right: 1px solid rgba(0, 128, 0, 0.315);
+    color: transparent;
+    border: 1px solid transparent;
 }
 
 h3{
@@ -350,25 +349,6 @@ h3{
     color: green;
 }
 
- .of1:hover .costo{
-    background-color: rgba(0, 162, 255, 0.589);
-    color: rgba(32, 32, 32, 0.63);
-}
-
-    .costo{
-    background-color: rgba(0, 0, 0, 0);
-    border-radius: 8px;
-    width: 40%;
-    color: rgba(0, 0, 0, 0);
-    box-align: center;
-    font-family: "apercu",sans-serif;
-    margin-left: 25%;
-    display: none;
-    height: 7%;
-    font-size: 160%;
-    transition: all 3s ease-out;
-
-}
 
 .galleriaimmagini{
     height: 20cm;
@@ -391,7 +371,7 @@ h3{
 .divimg {
     padding-left: 0.0787402%;
     width: 100%;
-    height: 400%;
+    height: 60%;
     background: rgba(255, 255, 255, 0.829);
 } 
 .dids1{
@@ -458,10 +438,7 @@ h3{
     .wrapper {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 1cm 130cm 7cm;
-    }
-    .divimg{
-        height: 445%;
+        grid-template-rows: 1cm 150cm 7cm;
     }
     .info{
         display:inline-block;
@@ -471,23 +448,19 @@ h3{
         width: 90%;
         clear: right;
         margin-bottom: 3%;
-        height: 18%;
     }
     
     .of2{
         width:90%;
         clear: right;
-        height: 18%;
     }
     .of1:hover{
         width: 90%;
         margin-bottom: 1%;
-        height: 25%;
     }
     
     .of2:hover{
         width:90%;
-        height: 25%;
     }
     .offerte{
         margin-bottom: 20%;
@@ -503,10 +476,17 @@ h3{
     .ptesto{
         width: 100%;
         margin-left: 0%;
+        margin-top: 50%;
         padding-top: 20%;
     }
-    .offerte{
-        height: 340%;
+    .h2dids{
+        font-size: 200%;
+    }
+    .h2dids2{
+        font-size: 200%;
+    }
+    .bodyN{
+        background-image: linear-gradient(#e0e0e0c4, rgb(0, 65, 59));
     }
 
 }
@@ -514,7 +494,6 @@ h3{
 /*body {
   margin: 40px;
 }
-
 
 .wrapper {
   display: grid;
