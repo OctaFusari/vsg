@@ -19,15 +19,21 @@ body{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 1.6cm 150cm 6cm;
+	animation: 0.8s fadein 0.8s forwards;
+	opacity: 0;
+}
+@keyframes fadein {
+	100%{
+		opacity: 1;
+    }
 }
 
 .wrapper2 {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1.6cm 80cm 6cm;
+    grid-template-rows: 1.6cm 90cm 6cm;
 	animation: 1s fadein 1s forwards;
 	opacity: 0;
-
 }
 @keyframes fadein {
 	100%{
@@ -46,11 +52,25 @@ nav {
     grid-column: span 12;
     margin-top: 15%;
     margin-bottom: 2%;
+    animation: 1.5s fadein 1.5s forwards;
+	opacity: 0;
+}
+@keyframes fadein {
+	100%{
+		opacity: 1;
+    }
 }
 
 footer{
     grid-column: span 12;
     border-top: solid grey 1px;
+    animation: 1.5s fadein 1.5s forwards;
+	opacity: 0;
+}
+@keyframes fadein {
+	100%{
+		opacity: 1;
+    }
 }
 
 .bodyBrentonico{
@@ -151,7 +171,7 @@ nav ul ul ul li {
 }
 #logo2{
     font-family: 'Lobster', cursive;
-    color: #ca932b;
+    color: #a77415;
     margin-right: 1cm;
     border: 2px solid rgba(0, 60, 88, 0.548);
     margin-top: 10px;
@@ -476,100 +496,6 @@ h3{
         margin-bottom: 20%;
     }
 }
-
-@media only screen and (max-width: 780px) {
-     
-    nav { margin: 0; }
-    
-    .toggle + a,
-    .menu { display: none; }
-
-    [id^=drop]:checked + ul { display: block; }
-    .menu{
-        background-color: #e0e0e0c4;
-        width: 100%
-    }
-    nav ul li {
-      display: block;
-      width: 100%;
-    }
-    .togglelog{
-      display: block;
-    }
-    .toggle{
-      display: block;
-    }
-    .menu{
-        position: absolute;
-    }
-
-    nav ul ul {
-      float: none;
-      position: static;
-      color: #ffffff;
-      padding-left: 10%;
-    }
-
-    nav ul ul li:hover > ul,
-    nav ul li:hover > ul { display: none; }
-
-    nav ul ul li {
-      display: block;
-    }
-    .logo2c{
-      display: none;
-    }
-    .wrapper {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 1.6cm 160cm 7cm;
-    }
-    .info{
-        display:inline-block;
-        width: 100%;
-    }
-
-    .titoli1{
-        font-size: 200%;
-    }
-    
-    .titoli2{
-        font-size: 114%;
-        font-weight: 100;
-    }
-    .ptesto{
-        width: 100%;
-        margin-left: 0%;
-        margin-top: 50%;
-        padding-top: 20%;
-    }
-    .h2dids{
-        font-size: 200%;
-    }
-    .h2dids2{
-        font-size: 200%;
-    }
-    .bodyN{
-        background-image: linear-gradient(#e0e0e0c4, rgb(0, 65, 59));
-    }
-    .costo{
-        width: 60%;
-    }
-    .divimg{
-        height: 60%;
-    }
-    .afoot2{
-        margin-top: 50%;
-    }
-    .staffdesc{
-        width: 100% !important;
-    }
-}
-@media only screen and (max-width:300px){
-    .afoot2{
-        margin-top: 80%;
-    }
-}
 .staffdesc{
     width: 20%;
     float: left;
@@ -612,12 +538,226 @@ h3{
     transition: all 0.5s ease-in-out;
 }
 .infospieg{
-    width: 100%;
+    width: 50%;
     background: rgba(255, 255, 255, 0.829);
     height: 30%;
     margin-top: 4%;
     padding-left: 7%;
+    margin-left: 4%;
+    margin-right: 4%;
 }
 .immaginetsdn{
-    width: 18%;
+    width: 40%;
+    float: left;
+    margin-right: 10%;
+}
+.descaz{
+    margin-right: 5%;
+}
+.contattaci{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.829);
+    margin-top: 4%;
+    padding-left: 7%;
+    height: 20%;
+}
+.ulof4{
+    margin: 3% 13% 0% 0%;
+    background-color: transparent;
+    font-size: 120%;
+    font-weight: 100;
+    font-family: 'Oswald';
+    color: rgb(34, 34, 34);
+    text-justify: distribute;
+}
+.socialb ul{
+    list-style: none;
+}
+
+.socialb ul li a{
+    font-family: 'Oswald';
+    font-size: 100%;
+    text-decoration: none;
+    color: rgb(56, 56, 56);
+}
+.facebbok:hover{
+    background-color: crimson;
+}
+
+.ul2 img{
+    margin-left: 15%;
+}
+
+.facebook , .github , .pinterest , .instagram , .instagram , .youtube {
+    margin-right: 5%;
+    float: left;
+}
+
+.spso{
+    font-family: 'Oswald';
+    font-size: 100%;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0);
+    transition: all 0.5s ease-in-out;
+}
+
+.facebook:hover .spso , .github:hover .spso  , .pinterest:hover .spso  , .instagram:hover .spso  , .instagram:hover .spso  , .youtube:hover .spso   {
+    color: rgb(56, 56, 56);
+}
+.staff{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.829);
+    height: 25%;
+    padding-left: 7%;
+    margin-top: 20%;
+    opacity: 0;
+    margin-top: 90%;
+    animation: 1s slidefade 1s forwards;
+}
+@keyframes slidefade{
+    100%{
+        opacity: 1;
+        position:relative;
+        margin-top: 20%;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .staff{
+        height: 27%;
+    }
+    .iNS{
+        font-family: 'Amatic SC', cursive;
+        color: rgb(34, 34, 34);
+        font-size: 200%;
+    }
+    .contattaci{
+        width: 100%;
+        background: rgba(255, 255, 255, 0.829);
+        margin-top: 4%;
+        padding-left: 1%;
+        height: 30%;
+    }
+    .ul2 img{
+        margin-left: 2%;
+    }
+
+    .facebook , .github , .pinterest , .instagram , .instagram , .youtube {
+        margin-right: 1%;
+        float: none;
+    }
+
+    nav { margin: 0; }
+    
+    .toggle + a,
+    .menu { display: none; }
+
+    [id^=drop]:checked + ul { display: block; }
+    .menu{
+        background-color: #e0e0e0c4;
+        width: 100%
+    }
+    nav ul li {
+      display: block;
+      width: 100%;
+    }
+    .togglelog{
+      display: block;
+    }
+    .toggle{
+      display: block;
+    }
+    .menu{
+        position: absolute;
+    }
+    .ulof1{
+
+        font-size: 100%;
+    }
+    .infospieg{
+        width: 100%;
+        background: rgba(255, 255, 255, 0.829);
+        height: 20%;
+        margin-top: 4%;
+        padding-left: 7%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    nav ul ul {
+      float: none;
+      position: static;
+      color: #ffffff;
+      padding-left: 10%;
+    }
+
+    nav ul ul li:hover > ul,
+    nav ul li:hover > ul { display: none; }
+
+    nav ul ul li {
+      display: block;
+    }
+    .logo2c{
+      display: none;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 1.6cm 160cm 7cm;
+    }
+    .wrapper2 {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 1.6cm 100cm 6cm;
+    }
+    .info{
+        display:inline-block;
+        width: 100%;
+    }
+
+    .titoli1{
+        font-size: 200%;
+    }
+    
+    .titoli2{
+        font-size: 114%;
+        font-weight: 100;
+    }
+    .ptesto{
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 50%;
+        padding-top: 20%;
+    }
+    .h2dids{
+        font-size: 200%;
+    }
+    .h2dids2{
+        font-size: 200%;
+    }
+    .bodyN{
+        background-image: linear-gradient(#e0e0e0c4, rgb(0, 65, 59));
+    }
+    .costo{
+        width: 60%;
+    }
+    .divimg{
+        height: 60%;
+    }
+    .afoot2{
+        margin-top: 56%;
+    }
+    .staffdesc{
+        width: 100% !important;
+    }
+    .dude{
+        font-size: 140%
+    }
+    .staffdesc:hover .dude{
+        font-size: 145%;
+    }
+}
+@media only screen and (max-width:300px){
+    .afoot2{
+        margin-top: 80%;
+    }
 }
