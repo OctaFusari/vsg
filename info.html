@@ -9,18 +9,20 @@
     <link rel="icon" href="img/logo.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lobster|Noto+Sans:700" rel="stylesheet" type="text/css">
     <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Righteous" rel="stylesheet"> </head>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Righteous|Oswald" rel="stylesheet"> </head>
 </head>
 <body class="bodyI">
-    <div class="wrapper">
-        <nav class="menu">
-            <div>
-                <h1 id="logo"> - VGS - </h1>
-            </div>
-            <ul>
-                <li class="logo2c"><h1 id="logo2">Viaggi so Good</h1></li>
+    <div class="wrapper2">
+        <nav>
+            <label for="drop" class="togglelog">- VGS -</label>
+            <input type="checkbox" id="drop" />
+            <ul class="menu">
+                <li class="logo2c"><h1 id="logo2">Viaggi So Good</h1></li>
                 <li><a href="info.html">Chi siamo?</a></li>
-                <li><a href="#">Località che ti offriamo<i class="fa fa-sort-desc"></i></a>
+                <li>
+                <label for="drop-1" class="toggle"><a>Località che ti offriamo</a></label>
+                <a href="#">Località</a>
+                <input type="checkbox" id="drop-1"/>
                     <ul>
                         <li><a href="Monte-Baldo.html">Brentonico</a></li>
                         <li><a href="Fiji.html">Isole Fiji</a></li>
@@ -31,21 +33,6 @@
                 </li>
                 <li><a href="index.html">HOME</a></li>
             </ul>
-            <script type="text/javascript">
-            $("nav div").click(function() {
-                  $("ul").slideToggle();
-                  $("ul ul").css("display", "none");
-            });
-            $("ul li").click(function() {
-                  $("ul ul").slideUp();
-                  $(this).find('ul').slideToggle();
-            });
-            $(window).resize(function() {
-                  if($(window).width() > 768) {
-                        $("ul").removeAttr('style');
-                  }
-            });
-            </script>
         </nav>
         <div class="mezzo">
             <div class="ptesto">
@@ -54,7 +41,32 @@
                 <a class="titoli2">Siamo qui per rendere rendere un viaggio ancora più emozionante di quanto non lo sia già</a>
             </div>
             <div class="offerte">
-
+                <h1 class="iNS">Il nostro staff</h1>
+                <div class="staffdesc">
+                    <img class="immaginestaff" src="/img/octst.png" alt="staff immagine">
+                    <h2 class="dude">Octavian Fusari</h2>
+                    <p class="ulof1">Creatore di Viaggi So Good, studia presso le ITT Marconi di Rovereto.</p>
+                    <p class="ulof1">Ogni giorno fin dalla data della crezione, cerca di migliorare iniseme allo staff il suo servizio e renderlo sempre più flessibile alle vostre esigenze</p>
+                </div>
+                <div class="staffdesc">
+                    <img class="immaginestaff" src="/img/octst.png" alt="staff immagine">
+                    <h2 class="dude">Octavian Fusari</h2>
+                    <p class="ulof1">Creatore di Viaggi So Good, studia presso le ITT Marconi di Rovereto.</p>
+                    <p class="ulof1">Ogni giorno fin dalla data della crezione, cerca di migliorare iniseme allo staff il suo servizio e renderlo sempre più flessibile alle vostre esigenze</p>
+                </div>
+                <div class="staffdesc">
+                    <img class="immaginestaff" src="/img/octst.png" alt="staff immagine">
+                    <h2 class="dude">Octavian Fusari</h2>
+                    <p class="ulof1">Creatore di Viaggi So Good, studia presso le ITT Marconi di Rovereto.</p>
+                    <p class="ulof1">Ogni giorno fin dalla data della crezione, cerca di migliorare iniseme allo staff il suo servizio e renderlo sempre più flessibile alle vostre esigenze</p>
+                </div>
+            </div>
+            <div class="infospieg">
+                <h1 class="iNS"> Tutto su di noi </h1>
+                <img src="/img/VGStem.png" alt="immagine VGS" class="immaginetsdn">
+                <p>
+                    Cre
+                </p>
             </div>
         </div>
         <footer>

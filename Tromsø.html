@@ -8,19 +8,20 @@
     <link rel="stylesheet" href="style/style2.css" type="text/css">
     <link rel="icon" href="img/logo.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lobster|Noto+Sans:700" rel="stylesheet" type="text/css">
-    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Righteous|PT+Sans" rel="stylesheet"> </head>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Righteous|PT+Sans|Oswald" rel="stylesheet"> </head>
 </head>
 <body class="bodyN">
     <div class="wrapper">
-        <nav class="menu">
-            <div>
-                <h1 id="logo"> - VGS - </h1>
-            </div>
-            <ul>
-                <li class="logo2c"><h1 id="logo2">Viaggi so Good</h1></li>
+        <nav>
+            <label for="drop" class="togglelog">- VGS -</label>
+            <input type="checkbox" id="drop" />
+            <ul class="menu">
+                <li class="logo2c"><h1 id="logo2">Viaggi So Good</h1></li>
                 <li><a href="info.html">Chi siamo?</a></li>
-                <li><a href="#">Località che ti offriamo<i class="fa fa-sort-desc"></i></a>
+                <li>
+                <label for="drop-1" class="toggle"><a>Località che ti offriamo</a></label>
+                <a href="#">Località</a>
+                <input type="checkbox" id="drop-1"/>
                     <ul>
                         <li><a href="Monte-Baldo.html">Brentonico</a></li>
                         <li><a href="Fiji.html">Isole Fiji</a></li>
@@ -31,21 +32,6 @@
                 </li>
                 <li><a href="index.html">HOME</a></li>
             </ul>
-            <script type="text/javascript">
-            $("nav div").click(function() {
-                  $("ul").slideToggle();
-                  $("ul ul").css("display", "none");
-            });
-            $("ul li").click(function() {
-                  $("ul ul").slideUp();
-                  $(this).find('ul').slideToggle();
-            });
-            $(window).resize(function() {
-                  if($(window).width() > 768) {
-                        $("ul").removeAttr('style');
-                  }
-            });
-            </script>
         </nav>
         <div class="mezzo">
             <div class="ptesto">
@@ -166,8 +152,10 @@
                     <img class="image1" src="img/immaginiNorvegia/nimg4.jpg" alt="immagine luoghi">
                     <h2 class="h2dids">Sleddog</h2>
                     <p class="ulof1">Gli husky, la razza solitamente utilizzata per lo sleddog, sono cani molto resistenti. Durante una tipica escursione tireranno la tua slitta a tutta velocità attraverso le distese innevate. E mentre il vento ti accarezza la faccia proverai un assaggio di com’era la vita in passato, quando la slitta trainata dai cani era un mezzo di trasporto comune.</p>
-                </div> 
+                </div>
+                <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=13.969116210937502%2C68.81989685719762%2C21.220092773437504%2C70.55600721375775&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a class="ulofmappa" href="https://www.openstreetmap.org/#map=8/69.706/17.595">Visualizza mappa ingrandita</a></small> 
             </div>
+
         </div>
         <footer>
             <ul class="info">
