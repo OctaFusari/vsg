@@ -32,7 +32,7 @@ body{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 1.6cm 90cm 6cm;
-	animation: 1s fadein 1s forwards;
+	animation: 0.8s fadein 0.8s forwards;
 	opacity: 0;
 }
 @keyframes fadein {
@@ -52,25 +52,11 @@ nav {
     grid-column: span 12;
     margin-top: 15%;
     margin-bottom: 2%;
-    animation: 1.5s fadein 1.5s forwards;
-	opacity: 0;
-}
-@keyframes fadein {
-	100%{
-		opacity: 1;
-    }
 }
 
 footer{
     grid-column: span 12;
     border-top: solid grey 1px;
-    animation: 1.5s fadein 1.5s forwards;
-	opacity: 0;
-}
-@keyframes fadein {
-	100%{
-		opacity: 1;
-    }
 }
 
 .bodyBrentonico{

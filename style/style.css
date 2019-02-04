@@ -36,25 +36,11 @@ nav {
 .mezzo {
     grid-column: span 12;
     margin-top: 20%;
-    animation: 1.5s fadein 1.5s forwards;
-	opacity: 0;
-}
-@keyframes fadein {
-	100%{
-		opacity: 1;
-    }
 }
 
 footer{
     grid-column: span 12;
     border-top: solid grey 1px;
-    animation: 1.5s fadein 1.5s forwards;
-	opacity: 0;
-}
-@keyframes fadein {
-	100%{
-		opacity: 1;
-    }
 }
 
 .toggle, [id^=drop] {
@@ -258,7 +244,7 @@ nav ul ul ul li {
 
   .anteprima{
     background-color: rgba(255, 254, 255, 0.904);
-    height: 50%;
+    height: 60%;
     width: 100%;
   }
 
@@ -355,10 +341,9 @@ p{
 }
 .testodesc{
     padding-right: 2%;
-    margin-left: 55%;
-    padding-left: 7%;
-    position: absolute;
-    height: 70%;
+    padding-left: 2%;
+    
+    height: 60%;
     background: rgba(242, 254, 255, 0.829);
 }
 
@@ -393,30 +378,29 @@ p{
     height: 40%;
 }
 .imagered1{
-    width: 30%;
-    height: 30%;
+    width: 10%;
+    height: 10%;
     margin-right: 0.8%;
     transition: all 0.5s ease-in-out;
 }
 .imagered2{
-    width: 45%;
-    height: 45%;
+    width: 20%;
+    height: 20%;
     margin-right: 2%;
     transition: all 0.5s ease-in-out;
 }
 .serieimg{
     width: 100%;
     margin-top: 3%;
-    display: inline-block;
 }
 .imagered1:hover{
-    width: 30.5%;
-    height: 30.5%;
+    width: 10.5%;
+    height: 10.5%;
     margin-bottom: -0.4%;
     margin-right: 0.5%;
 }
 .imagered2:hover{
-    width: 46%;
-    height: 46%;
+    width: 20.5%;
+    height:  20.5%;
     margin-right: 1%;
 }
