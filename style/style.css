@@ -10,7 +10,6 @@ html{
     word-wrap: break-word;
     margin: 0;
     padding: 0;
-    transform-style: preserve-3d;
     overflow-y: scroll;
     overflow-x: hidden;
     height: 100%;
@@ -20,12 +19,12 @@ html{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 1.6cm 65cm 6cm;
-	animation: 0.8s fadein 0.8s forwards;
+	animation: 0.8s fadeinentrata 0.8s forwards;
 	opacity: 0;
 }
-@keyframes fadein {
+@keyframes fadeinentrata {
 	100%{
-		opacity: 1;
+        opacity: 1; 
     }
 }
 
@@ -52,7 +51,7 @@ label{
 nav {
     margin: 0;
     padding: 0;
-    background-color: #e0e0e02a;
+    background-color: #e0e0e059;
 }
 
 #logo {
@@ -84,7 +83,7 @@ nav ul li {
 nav a {
     display: block;
     padding: 0 20px;
-    color: #bd8c32;
+    color: rgb(0, 65, 59);
     font-family: 'Oswald';
     text-rendering: optimizeLegibility;
     font-size: 16.5px;
@@ -109,7 +108,7 @@ nav ul ul {
     display: none;
     position: absolute;
     top: 60px;
-    background-color: #e0e0e02a;
+    background-color: #e0e0e059;
 }
    
 nav ul li:hover > ul { display: inherit; }
@@ -124,16 +123,15 @@ nav ul ul li {
    
 nav ul ul ul li {
     position: relative;
-    top: -60px;
-    left: 170px;
     color:#e0e0e0c4;
 }
 #logo2{
     font-family: 'Lobster', cursive;
-    color: #ca932b;
+    color: #885800;
     margin-right: 1cm;
     border: 2px solid rgba(0, 60, 88, 0.548);
     margin-top: 10px;
+    border-radius: 2px;
     margin-bottom: 0%;
     transition-property: color;
     transition-duration: 2s;
@@ -240,6 +238,7 @@ nav ul ul ul li {
     .ptesto{
         height: 60%;
     }
+
 }
 
   .anteprima{
@@ -262,6 +261,7 @@ nav ul ul ul li {
     width: 50%;
     float: left;
     position: relative;
+    float: left;
     overflow: hidden; 
     text-align: center;
   }
@@ -321,12 +321,9 @@ nav ul ul ul li {
 
 
 p{
-    text-justify: distribute;
-    text-align: justify;
     font-family: 'Oswald';
     color: #3b3b3b;
     font-size: 140%;
-    font-weight: 100;
     margin-bottom: 1%;
 }
 @media only screen and (max-width:780px){
@@ -344,17 +341,23 @@ p{
     }
     .ptesto{
         width: 100%;
-        margin-left: 0%;
         margin-top: 50%;
         padding-top: 20%;
     }
+
     .testodesc{
         padding-right: 2%;
         padding-left: 2%;
-        margin-top: 90%;
         margin-left: 0% !important;
         background: rgba(242, 254, 255, 0.829);
     }
+
+    .anteprima{
+        background-color: rgba(255, 254, 255, 0.904);
+        height: 200%;
+        width: 100%;
+    }
+    
     .wrapper {
         grid-template-rows: 1.6cm 55cm 5cm;
     }
@@ -370,6 +373,11 @@ p{
     .afoot2{
         margin-top: 50%;
     }
+    .slider-container{
+        height: 17%;
+        width: 100%;
+        float: none;
+    }
 }
 @media only screen and (max-width:300px){
     .afoot2{
@@ -380,8 +388,7 @@ p{
     padding-right: 2%;
     margin-left: 55%;
     padding-left: 2%;
-    position: absolute;
-    height: 64.5%;
+    height: 50%;
     background: rgba(242, 254, 255, 0.829);
 }
 

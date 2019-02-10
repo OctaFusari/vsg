@@ -19,10 +19,10 @@ body{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 1.6cm 150cm 6cm;
-	animation: 0.8s fadein 0.8s forwards;
+	animation: 0.8s fadeinentrata 0.8s forwards;
 	opacity: 0;
 }
-@keyframes fadein {
+@keyframes fadeinentrata {
 	100%{
 		opacity: 1;
     }
@@ -31,11 +31,11 @@ body{
 .wrapper2 {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1.6cm 90cm 6cm;
-	animation: 0.8s fadein 0.8s forwards;
+    grid-template-rows: 1.6cm 120cm 6cm;
+	animation: 0.8s fadeinentrata 0.8s forwards;
 	opacity: 0;
 }
-@keyframes fadein {
+@keyframes fadeinentrata {
 	100%{
 		opacity: 1;
     }
@@ -45,7 +45,7 @@ nav {
     grid-column: span 12;
     margin: 0;
     padding: 0;
-    background-color: #e0e0e02a;
+    background-color: #e0e0e059;
 }
 
 .mezzo {
@@ -114,7 +114,7 @@ nav ul li {
 nav a {
     display: block;
     padding: 0 20px;
-    color: #86621d;
+    color: rgb(0, 65, 59);
     font-family:'Oswald';
     text-rendering: optimizeLegibility;
     font-size: 16.5px;
@@ -128,7 +128,7 @@ nav ul ul a{
 }
 
 nav a:hover {
-    color: #daaa52;
+    color: rgba(0, 60, 88, 0.548);
     text-decoration: underline;
 }
   
@@ -136,7 +136,7 @@ nav ul ul {
     display: none;
     position: absolute;
     top: 60px;
-    background-color: #e0e0e02a;
+    background-color: #e0e0e059;
 }
    
 nav ul li:hover > ul { display: inherit; }
@@ -162,6 +162,7 @@ nav ul ul ul li {
     border: 2px solid rgba(0, 60, 88, 0.548);
     margin-top: 10px;
     margin-bottom: 0%;
+    border-radius: 2px;
     transition-property: color;
     transition-duration: 2s;
     transition-timing-function: linear;
@@ -285,7 +286,7 @@ nav ul ul ul li {
     width: 20%;
     float: left;
     height: 50%;
-    margin-right: 2%;
+    margin-right: 13%;
     background-color: rgb(255, 255, 248);
     transition: all 0.5s ease-in-out;
 }
@@ -331,6 +332,7 @@ nav ul ul ul li {
 .of1:hover{
     height: 60%;
     width: 25%;
+    margin-right: 8%;
     background-color: rgb(247, 247, 232);
 }
 .of1:hover table{
@@ -359,7 +361,6 @@ nav ul ul ul li {
     font-weight: 300;
     font-family: 'Oswald';
     color: rgb(34, 34, 34);
-    text-justify: distribute;
 }
 
 .ulofmappa{
@@ -381,8 +382,8 @@ nav ul ul ul li {
     font-weight: 100;
     font-family: 'Oswald';
     color: rgb(34, 34, 34);
-    text-justify: distribute;
 }
+
 .ulof2{
     display: block;
     margin: 3% 3% 2% 1%;
@@ -392,7 +393,6 @@ nav ul ul ul li {
     text-align: right;
     font-family: 'Oswald';
     color: rgb(34, 34, 34);
-    text-justify: distribute;
 }
 
 table{
@@ -438,6 +438,7 @@ h3{
     height: 63.8%;
     background: rgba(255, 255, 255, 0.829);
 } 
+
 .dids1{
     width: 100%;
     margin-bottom: 4%;
@@ -458,25 +459,25 @@ h3{
 .dids1 .image1{
     float: left;
 }
+
 @media only screen and (max-width: 1300px){
     .of1{
-        width: 60%;
+        width: 98%;
         clear: right;
         margin-bottom: 3%;
         margin-left: -6%;
     }
-    
     .of2{
-        width:60%;
+        width: 98%;
         clear: right;
         margin-left: -6%;
     }
     .of1:hover{
-        width: 61%;
+        width: 100%;
     }
     
     .of2:hover{
-        width:61%;
+        width: 100%;
     }
     .offerte{
         margin-bottom: 20%;
@@ -526,7 +527,7 @@ h3{
 .infospieg{
     width: 50%;
     background: rgba(255, 255, 255, 0.829);
-    height: 30%;
+    height: 18%;
     margin-top: 4%;
     padding-left: 7%;
     margin-left: 4%;
@@ -541,6 +542,13 @@ h3{
     margin-right: 5%;
 }
 .contattaci{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.829);
+    margin-top: 4%;
+    padding-left: 7%;
+    height: 20%;
+}
+.dovesiamo{
     width: 100%;
     background: rgba(255, 255, 255, 0.829);
     margin-top: 4%;
@@ -593,7 +601,7 @@ h3{
 .staff{
     width: 100%;
     background: rgba(255, 255, 255, 0.829);
-    height: 25%;
+    height: 18%;
     padding-left: 7%;
     margin-top: 20%;
     opacity: 0;
@@ -610,8 +618,18 @@ h3{
 
 @media only screen and (max-width: 780px) {
     .staff{
-        height: 27%;
+        height: 22%;
     }
+    .h2of{
+        font-size: 100%;
+    }
+
+    .titolopacchetti{
+        text-align: center;
+        font-family: 'Amatic SC', cursive;
+        font-size: 100%;
+    }
+    
     .iNS{
         font-family: 'Amatic SC', cursive;
         color: rgb(34, 34, 34);
@@ -622,7 +640,7 @@ h3{
         background: rgba(255, 255, 255, 0.829);
         margin-top: 4%;
         padding-left: 1%;
-        height: 30%;
+        height: 25%;
     }
     .ul2 img{
         margin-left: 2%;
@@ -657,13 +675,11 @@ h3{
         position: absolute;
     }
     .ulof1{
-
         font-size: 100%;
     }
     .infospieg{
         width: 100%;
         background: rgba(255, 255, 255, 0.829);
-        height: 20%;
         margin-top: 4%;
         padding-left: 7%;
         margin-left: 0%;
@@ -688,7 +704,7 @@ h3{
     .wrapper {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: 1.6cm 160cm 7cm;
+        grid-template-rows: 1.6cm 190cm 7cm;
     }
     .wrapper2 {
         display: grid;
@@ -720,9 +736,6 @@ h3{
     .h2dids2{
         font-size: 200%;
     }
-    .bodyN{
-        background-image: linear-gradient(#e0e0e0c4, rgb(0, 65, 59));
-    }
     .costo{
         width: 60%;
     }
@@ -740,6 +753,13 @@ h3{
     }
     .staffdesc:hover .dude{
         font-size: 145%;
+    }
+    .wrapper2 {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 1.6cm 128cm 6cm;
+        animation: 0.8s fadeinentrata 0.8s forwards;
+        opacity: 0;
     }
 }
 @media only screen and (max-width:300px){
